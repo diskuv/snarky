@@ -6,6 +6,7 @@ user.bazelrc
 
 .merlin
 _build
+_opam
 *.install
 *:*
 

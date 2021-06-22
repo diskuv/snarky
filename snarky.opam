@@ -28,9 +28,11 @@ depends: [
   "ctypes_foreign_libffi"
   "ppx_snarky"
   "ppx_jane" {>= "v0.12" & < "v0.13"}
-  "ppx_deriving" {>= "4.2.1" & < "4.5"}
+  #"ppx_deriving" {>= "4.2.1" & < "4.5"}
   "bisect_ppx" {>= "2.0.0"}
   "dune"                {build & >= "2.0"}
+  # versions from https://github.com/o1-labs/snarky/blob/master/opam.export's roots:[] and compiler:[]
+  "ppx_deriving"           {= "4.5"}
 ]
 depopts: [
   "snarky_cuda"
